@@ -1,2 +1,2 @@
-# Scripts
-A collection of command line tools
+# programs
+A collection of command line programs
