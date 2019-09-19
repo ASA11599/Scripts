@@ -21,7 +21,7 @@ class Even : public Functional::Function<bool, int>
 };
 
 template <typename T>
-void printVector(std::vector<T> &v)
+void printVector(std::vector<T>& v)
 {
     std::cout << "{ ";
     for (int i = 0 ; i < v.size() ; i++) {

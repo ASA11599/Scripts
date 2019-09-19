@@ -3,13 +3,11 @@
 namespace Functional
 {
 
-    template <typename ... Args> class Function_Base {};
-
-    template <typename Rv, typename ... Args>
-    class Function : public Function_Base<Args...>
+    template <typename R, typename ... As>
+    class Function
     {
         public:
-            virtual Rv operator()(Args...) = 0;
+            virtual R operator()(As ... args) = 0;
     };
 
     template <typename T>
