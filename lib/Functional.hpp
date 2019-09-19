@@ -9,7 +9,7 @@ namespace Functional
     class Function : public Function_Base<Args...>
     {
         public:
-        virtual Rv operator()(Args...) = 0;
+            virtual Rv operator()(Args...) = 0;
     };
 
     template <typename T>
