@@ -46,7 +46,7 @@ def valid_combination(combination: str, alphabet: list) -> bool:
     # This function can be used to filter combinations
     return True
 
-def get_combination(a: str, n: int) -> list:
+def get_combinations(a: str, n: int) -> list:
     result: list = []
     char_digit_list: list = [Char_digit(None) for _ in range(n)]
     for i in range(n):
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     if ('a' in args.keys()) and ('n' in args.keys()):
         if (len(args['a']) == 1) and (len(args['n']) == 1):
             Char_digit.alphabet = [char for char in args['a'][0]]
-            res: list = get_combination(args['a'][0], int(args['n'][0]))
+            res: list = get_combinations(args['a'][0], int(args['n'][0]))
             '''
             for c in res:
                 print(c)
