@@ -37,15 +37,15 @@ Reverses a given string
 
 Compares files and checks if they are the same (copies)
 
-## sum.c
+## src/sum.c
 
 Finds the sum of given numbers
 
-## touch.cmd
+## src/touch.cmd
 
 Implementation of `touch` for the Windows command line
 
-## web-crawler.py
+## src/web-crawler.py
 
 Starts at a webpage and visits all the links found recursively
 
