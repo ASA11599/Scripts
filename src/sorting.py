@@ -32,5 +32,5 @@ def quick_sort(lst: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     lst: list[int] = [9, 1, 2, 8, 3, 7, 4, 6, 5]
-    print("merge_sort({}): {}", lst, merge_sort(lst))
-    print("quick_sort({}): {}", lst, quick_sort(lst))
+    print("merge_sort({}): {}".format(lst, merge_sort(lst)))
+    print("quick_sort({}): {}".format(lst, quick_sort(lst)))
