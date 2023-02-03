@@ -31,6 +31,7 @@ func rotateMatrixOnce(matrix [][]int, direction int) [][]int {
 
 func rotateMatrix(matrix [][]int, rotation int) [][]int {
 	rotated := matrix
+	rotation = rotation % 4
 	if rotation == 0 {
 		return rotated
 	} else {
