@@ -17,11 +17,11 @@ Found: bb
 
 Finds the Fibonnacci sequence up to a number
 
-## src/http-cli.py
+## src/http_cli.py
 
 Performs HTTP requests
 
-## src/java-run.py
+## src/java_run.py
 
 Runs Java programs
 
@@ -33,7 +33,7 @@ Prints the current working directory
 
 Reverses a given string
 
-## src/same-files.py
+## src/same_files.py
 
 Compares files and checks if they are the same (copies)
 
@@ -45,12 +45,12 @@ Finds the sum of given numbers
 
 Implementation of `touch` for the Windows command line
 
-## src/web-crawler.py
+## src/web_crawler.py
 
 Starts at a webpage and visits all the links found recursively
 
 ```
-$ python3 web-crawler.py https://www.python.org/
+$ python3 web_crawler.py https://www.python.org/
 
 Found link to: https://www.python.org/dev/peps/peps.rss/
 Found link to: https://www.python.org/jobs/feed/rss/
