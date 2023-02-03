@@ -79,13 +79,18 @@ func (this *LinkedList[T]) Remove(index int) error {
 			this.head = nil
 			this.size--
 		} else {
-			current := this.head
-			i := 0
-			for i != (index - 1) {
-				current = current.GetNext()
-				i++
+			if index == 0 {
+				this.head = this.head.GetNext()
+			} else {
+				current := this.head
+				i := 0
+				for i != (index - 1) {
+					current = current.GetNext()
+					i++
+				}
+				current.next = current.GetNext().GetNext()
 			}
-			current.next = current.GetNext().GetNext()
+
 		}
 		this.size--
 		return nil
@@ -125,6 +130,14 @@ func main() {
 	list.(*LinkedList[int]).Append(58)
 	fmt.Println(list)
 	list.(*LinkedList[int]).Append(59)
+	fmt.Println(list)
+	list.Insert(2, 99)
+	fmt.Println(list)
+	list.Insert(0, 99)
+	fmt.Println(list)
+	list.Remove(0)
+	fmt.Println(list)
+	list.Remove(2)
 	fmt.Println(list)
 	list.(*LinkedList[int]).Pop()
 	fmt.Println(list)
