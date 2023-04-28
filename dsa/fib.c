@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 
-unsigned long fib(const int n, unsigned long * memo)
-{
+unsigned long fib(const int n, unsigned long * memo) {
     if (n == 1) return 0;
     if (n == 2) return 1;
     else {
@@ -16,8 +15,7 @@ unsigned long fib(const int n, unsigned long * memo)
     }
 }
 
-int main(int argc, char * argv[])
-{
+int main(int argc, char * argv[]) {
     if (argc != 2) exit(EXIT_FAILURE);
     else {
         int n = atoi(argv[1]);
