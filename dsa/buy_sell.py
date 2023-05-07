@@ -12,7 +12,6 @@ def buy_sell(prices: list[int]) -> tuple[int, tuple[int, int]]:
         local_max_profit: int = prices[i + 1] - prices[i]
         local_sell: int = i + 1
         for j in range((i + 1), len(prices)):
-            ops += 1
             if (prices[j] - prices[i]) > local_max_profit:
                 local_max_profit = prices[j] - prices[i]
                 local_sell = j
