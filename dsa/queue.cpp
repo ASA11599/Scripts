@@ -1,3 +1,6 @@
+#include <vector>
+#include <mutex>
+
 template <typename T>
 class Queue {
     private:
